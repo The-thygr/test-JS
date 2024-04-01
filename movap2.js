@@ -48,6 +48,10 @@ async function start(params, settings) {
         selectedShow = await getByImdbId(choice.imdbID);
     }
 
+    selectedShow.print;
+    
+    
+
     QuickAdd.variables = {
         ...selectedShow,
         actorLinks: linkifyList(selectedShow.Actors.split(",")),
